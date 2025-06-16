@@ -1,7 +1,6 @@
 first paste
-let customPetals = []
-new floof.PetalConfig("thingy",1,1,1).setDescription("desc").setDrawing(new floof.Drawing().addAction("beginPath").addAction("circle", 0, 0, 1).addAction("fill", "#55CACA"));
-const petalRes = await floof.createCustomPetal(customPetal[0]);
+let customPetal = new floof.PetalConfig("thingy",1,1000,1000).setDescription("desc").setDrawing(new floof.Drawing().addAction("beginPath").addAction("circle", 0, 0, 1).addAction("fill", "#55CACA")).setSize(20);
+const petalRes = await floof.createCustomPetal(customPetal);
 <br>
 and press enter
 <br>
@@ -9,5 +8,3 @@ then paste
 floof.setSlot(1, 0, 74, 0)
 <br>
 and press enter
-<br><br>
-the floof.PetalConfig("thingy",1,1,1) part shows the name of the petal, 
